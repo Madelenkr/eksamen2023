@@ -21,11 +21,11 @@
             <section>
                 <ul class="meny">
 
-                <li> <a href="#"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
-                <li> <a href="#"> Home </a></li>
-                <li> <a href="#"> Portfolio </a></li>
-                <li> <a href="#"> About </a></li>
-                <li> <a href="#"> Contact </a></li>
+                <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="products.html"> Portfolio </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="about.html"> Contact </a></li>
 
                 </ul>
                 
@@ -44,7 +44,7 @@
             <p>
                 Nunc mauris massa phasellus fringilla eu consectetur et cras mauris. Ac porttitor sem ornare sed rutrum vitae purus velit 
             </p>
-            <a href="#" class="info">Read more about our services</a>
+            <a href="about.html" class="info">Read more about our services</a>
         </article>
 
 
@@ -58,15 +58,13 @@
 
     <section id="company">
         <article>
-        <!-- Bilde er hentet her https://placehold.co/400x400 -->
-
         <h2>About Our Company</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed. 
             Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
         </p>
-        <a href="#">Read more about us</a>
-
+        <a href="about.html">Read more about us</a>
+        <!-- Bilde er hentet her https://placehold.co/400 -->
         <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
 
         </article>
@@ -100,10 +98,14 @@
 
     </section>
 
-    <section class="signup">
-        <h2>Sign up for our newsletter</h2>
+    <!-- Fikk inspirasjon av min tidligere oblig 3 på koden -->
+    <form id="signup">
 
-    </section>
+        <h2>Sign up for out newsletter</h2>
+        <input type="email" name="email" placeholder="Nora@epost.no" id="mail" required>
+        <label>Sign me up!</label>
+
+    </form>
 
 </section>
 
@@ -111,18 +113,24 @@
 
     <footer>
 
-        <img src="img/logo1.png" alt="Bilde av logo">
+       <nav>
+            <ul>
+                 <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
+             </ul>
 
         <p>
         Companyrights Companyname 2023
         </p>
 
         <ul>
-            <li><a href="#"> <i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"> <i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"> <i class="fa-brands fa-linkedin"></i></a></li>
+            <!--https://www.w3schools.com/html/html_links.asp -->
+            <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
 
         </ul>
+
+        </nav>
     </footer>
 
     </div>
