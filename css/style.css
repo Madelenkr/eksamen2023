@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+/* brukt kode fra kollonne 8 - 24 https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
+
+
+/* Setter grunnfontstørrelsen til å være responsiv basert på visningsvinduets bredde */
+html {
+    font-size: calc(1em + 1vw);
+}
+
+/* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #efefef;
+}
+
+/* Styling for overskrift og navigasjonsmeny i header */
+header {
+    text-align: center; /* Senterjusterer teksten i header. */
+    background-image: url(img/sunset.jpg); /* Bakgrunnsbilde for header. */
+    background-size: cover; /* Skalerer bakgrunnsbildet for å dekke hele header-området. */
+    padding: 0 0 1rem 0; /* Legger til padding (avstand) til bunnen av header. */
+}
+
+@media only screen and (min-width: 960px) {
+    .hiddendesktop{display:none;}
+    }
