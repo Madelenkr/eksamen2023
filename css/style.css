@@ -25,6 +25,49 @@ header {
     padding: 0 0 1rem 0; /* Legger til padding (avstand) til bunnen av header. */
 }
 
+#logo1{
+    font-size: 20px;
+}
+
+#grid-container{
+    display:grid;
+    grid-template-areas: "header header"
+                          "introimage introtext introtext"
+                          ""
+                          "footer footer footer"  ;
+}
+ 
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Legger seg under hverandre mtp mobil */
+    flex-wrap: wrap;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 10px;
+}
+
+#myvideo{
+    width: 100%;
+}
+
+.ul meny{
+    justify-content: right;
+
+}
+
+/* Desktop */
+
+/* Hentet kode her https://help.optimizepress.com/article/1667-how-to-hide-an-element-on-desktop/ */
 @media only screen and (min-width: 960px) {
     .hiddendesktop{display:none;}
     }
+
+
+@media only screen and (max-width: 600px)
