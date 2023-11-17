@@ -1,152 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linker opp til css og fontawsome ikoner -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/fontawsome/css/all.css">
-
-
     <title>Companyname</title>
 </head>
-
-
 <body>
-    <div id="grid-container">
-        
-    <header>
-       <nav>
+    <div id="grid-container">   
+        <nav>
             <section>
-                <ul class="meny">
-
-                <li> <a href="index.html"> <img src="img/logo1.png" class="logo1" alt="Bilde av logo"> </a> </li>
-                <li> <a href="index.html"> Home </a></li>
-                <li> <a href="products.html"> Portfolio </a></li>
-                <li> <a href="about.html"> About </a></li>
-                <li> <a href="about.html"> Contact </a></li>
-
+                <ul class="navbar">
+                    <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
+                    <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
+                    <li> <a href="about.html"> About </a></li>
+                    <li> <a href="products.html"> Portfolio </a></li>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>
                 
             </section>
-        </nav>
-   </header>
+        </nav> 
+        <header>
+            <!--Header-->
+        </header>
+        <main>
+            <section class="flex-container">
+                <h2>Explore previous jobs</h2>
+                
+                <ul>
+                <!-- TIL CSS https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div -->
+                    <li><a href="#branding" class="boks"> Branding</a></li>
+                    <li><a href="#design" class="boks"> Design</a></li>
+                    <li><a href="#development" class="boks"> Development</a></li>
+                </ul>
+                    <!-- Fikk hjelp av chatGPT hvordan oppsettet ser ut, med id og article -->
 
-<main>
-    <section class="flex-container">
-        <h2>Explore previous jobs</h2>
+                <section id="branding">
 
-        <!-- TIL CSS https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div -->
-            <a href="#branding" class="boks"> Branding</a>
-            <a href="#design" class="boks"> Design</a>
-            <a href="#development" class="boks"> Development</a>
+                    <h2>Branding</h2>
 
-            <!-- Fikk hjelp av chatGPT hvordan oppsettet ser ut, med id og article -->
+                    <article class="artikkelkort">
+                        <!-- Bilde er hentet her https://placehold.co/400 -->
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-        <section id="branding">
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
 
-            <h2>Branding</h2>
+                    </article>
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-            <article class="artikkelkort">
-                <!-- Bilde er hentet her https://placehold.co/400 -->
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-            </article>
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
+                </section>
 
+                <section id="design">
 
-            </article>
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
+                    <h2>Design</h2>
 
+                    <article class="artikkelkort">
+                        <!-- Bilde er hentet her https://placehold.co/400 -->
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-            </article>
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
+                </section>
 
-            </article>
+                <section id="development">
 
-        </section>
+                    <h2>Development</h2>
 
-        <section id="design">
+                    <article class="artikkelkort">
+                        <!-- Bilde er hentet her https://placehold.co/400 -->
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
 
-            <h2>Design</h2>
+                    <article class="artikkelkort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                        <h4>Et harum quidem</h4>
+                    </article>
+                
+                </section>
+            </section>
+        </main>
 
-            <article class="artikkelkort">
-                <!-- Bilde er hentet her https://placehold.co/400 -->
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-
-            </article>
-
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-
-
-            </article>
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-
-
-            </article>
-
-        </section>
-
-        <section id="development">
-
-            <h2>Development</h2>
-
-            <article class="artikkelkort">
-                <!-- Bilde er hentet her https://placehold.co/400 -->
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-
-            </article>
-
-            <article class="artikkelkort">
-                <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
-                <h4>Et harum quidem</h4>
-
-            </article>
-        
-
-    </section>
-    </section>
-</main>
-
-    <footer>
-
-       <nav>
+        <footer>
             <ul>
-                 <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
-             </ul>
+                <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
+            </ul>
 
-        <p>
-        Companyrights Companyname 2023
-        </p>
+            <p>
+            Companyrights Companyname 2023
+            </p>
 
-        <ul>
-             <!--https://www.w3schools.com/html/html_links.asp -->
-             <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
-             <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
-             <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
+            <ul>
+                <!--https://www.w3schools.com/html/html_links.asp -->
+                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
 
-        </ul>
-
-        </nav>
-    </footer>
-
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

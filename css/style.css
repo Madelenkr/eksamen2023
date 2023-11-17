@@ -14,27 +14,72 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #efefef;
+    justify-content: center;
 }
 
 /* Styling for overskrift og navigasjonsmeny i header */
 header {
-    text-align: center; /* Senterjusterer teksten i header. */
-    background-image: url(img/sunset.jpg); /* Bakgrunnsbilde for header. */
-    background-size: cover; /* Skalerer bakgrunnsbildet for å dekke hele header-området. */
-    padding: 0 0 1rem 0; /* Legger til padding (avstand) til bunnen av header. */
+    grid-area: header;
+    }
+
+    /* Brukt denne kilden til navbar https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      li {
+        float: right;
+      }
+      
+      li a {
+        font-size: medium;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 10px 7px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+      li a.active:hover {
+        background-color: #111;
+        color: #e6bd43;
+        
+      }
+      
+      .active {
+        background-color: #e6bd43;
+      }
+
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: footer;
 }
 
 #logo1{
+    position: absolute;
+    left: 0;
     font-size: 20px;
+    width: 5%;
+    float: left;
 }
 
 #grid-container{
     display:grid;
-    grid-template-areas: "header header"
-                          "introimage introtext introtext"
-                          ""
-                          "footer footer footer"  ;
+    grid-template-areas:  "nav nav nav"
+                          "header header header" 
+                          "main main main"
+                          "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
 }
  
 .flex-container{
@@ -43,9 +88,11 @@ header {
     justify-content: space-between;
     /* Legger seg under hverandre mtp mobil */
     flex-wrap: wrap;
+    grid-template-columns: 1fr;
 }
 
 main{
+    grid-area: main;
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
@@ -54,20 +101,52 @@ main{
 }
 
 #myvideo{
-    width: 100%;
+    max-width: 100%;
+    padding-top: 60px;
 }
 
 .ul meny{
     justify-content: right;
 
 }
+.fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.squaredfixedbutten{
+  height: 50px;
+  line-height: 50px;  
+  width: 35px;  
+  font-size: 20px;
+  border: 3px;
+  border-radius: 5px;
+  background-color:#000;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
 
 /* Desktop */
 
 /* Hentet kode her https://help.optimizepress.com/article/1667-how-to-hide-an-element-on-desktop/ */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 600px) {
     .hiddendesktop{display:none;}
     }
 
 
-@media only screen and (max-width: 600px)
+
+/* Mobil */
+@media only screen and (max-width: 600px) {
+    .hiddenmobile{display:none;}
+#grid-container{
+    display: grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "main"
+                        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+}

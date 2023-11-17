@@ -8,37 +8,29 @@
     <!-- Linker opp til css og fontawsome ikoner -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/fontawsome/css/all.css">
-
-
     <title>Companyname</title>
 </head>
 
 
 <body>
     <div id="grid-container">
-
-    <header>
        <nav>
             <section>
-                <ul class="meny">
-
-                <li> <a href="index.html"> <img src="img/logo1.png" class="logo1" alt="Bilde av logo"> </a> </li>
-                <li> <a href="index.html"> Home </a></li>
-                <li> <a href="products.html"> Portfolio </a></li>
-                <li> <a href="about.html"> About </a></li>
-                <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
-                <li> <a href="about.html#kontaktoss"> Contact </a></li>
-
-                </ul>
-                
+                <ul class="navbar">
+                    <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
+                    <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
+                    <li> <a href="about.html"> About </a></li>
+                    <li> <a href="products.html"> Portfolio </a></li>
+                    <li> <a href="index.html"> Home </a></li>
+                    <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                </ul>  
             </section>
         </nav>
-
+        <header>
             <!-- Video til header https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video -->
-            <!-- <video autoplay muted loop id="myvideo"> -->
-                <!-- <source src="img/mountains.mp4" type="video/mp4"> -->
-              <!-- </video> -->
-
+            <video class="hiddenmobile" autoplay muted loop id="myvideo">
+            <source src="img/mountains.mp4" type="video/mp4">
+               </video>
 
         
             <div class="hiddendesktop">
@@ -48,100 +40,99 @@
 
                 <!-- Tilbake til opp knapp https://stackoverflow.com/questions/19188211/how-to-add-fixed-button-to-the-bottom-right-of-page?fbclid=IwAR1xq9PaPY5SjSVxJz14JOX64lxeqJASfQ88onHf-nCiCNDJLFwCXWiSuUc -->
            
-                <a class="fixedButton" href>
-                    <div class="roundedFixedBtn"><i class="fa-solid fa-arrow-up"></i></div>
-                 </a>
+            <a class="fixedButton" href>
+                <div class="squaredfixedbutten"><i class="fa-solid fa-arrow-up"></i></div>
+            </a>
+
+            <section>
+                <h2>Compeling headline</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
+                    Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
+                </p>
+                <a href="#Ourservices">read more about our services </a>
+            </section>
       
-   </header>
+        </header>
+        <main>
+            <section class="flex-container">
+                <section>
+                    <h2>Enganging subheading. What can you help your visitors with</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
+                        Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
+                    </p>
+                </section>
 
-<main>
-    <section class="flex-container">
+                <section id="company">
+                    <article>
+                    <h2>About Our Company</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed. 
+                        Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
+                    </p>
+                    <a href="about.html">Read more about us</a>
+                    <!-- Bilde er hentet her https://placehold.co/400 -->
+                    <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
 
+                    </article>
 
-    <section>
-        <h2>Enganging subheading. What can you help your visitors with</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
-            Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
-        </p>
-    </section>
+                </section>
 
-    <section id="company">
-        <article>
-        <h2>About Our Company</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed. 
-            Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
-        </p>
-        <a href="about.html">Read more about us</a>
-        <!-- Bilde er hentet her https://placehold.co/400 -->
-        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
+                <section id="services">
 
-        </article>
+                    <h2 id="ourservices">Our Services</h2>
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Branding</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
+                    </p>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h4>Design</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
+                    </p>
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Development</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
+                    </p>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h4>Support</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
+                    </p>
+                </section>
 
-    </section>
+                <!-- Fikk inspirasjon av min tidligere oblig 3 på koden -->
+                <form id="signup">
 
-    <section id="services">
+                    <h2>Sign up for out newsletter</h2>
+                    <input type="email" name="email" placeholder="Nora@epost.no" id="mail" required>
+                    <label>Sign me up!</label>
 
-        <h2 id="ourservices">Our Services</h2>
-        <i class="fa-solid fa-users"></i>
-        <h4>Branding</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
-        </p>
-        <i class="fa-solid fa-cloud-arrow-up"></i>
-        <h4>Design</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
-        </p>
-        <i class="fa-solid fa-code"></i>
-        <h4>Development</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
-        </p>
-        <i class="fa-solid fa-wifi"></i>
-        <h4>Support</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
-        </p>
+                </form>
 
+            </section>
 
-    </section>
+        </main>
 
-    <!-- Fikk inspirasjon av min tidligere oblig 3 på koden -->
-    <form id="signup">
-
-        <h2>Sign up for out newsletter</h2>
-        <input type="email" name="email" placeholder="Nora@epost.no" id="mail" required>
-        <label>Sign me up!</label>
-
-    </form>
-
-</section>
-
-</main>
-
-    <footer>
-
-       <nav>
+        <footer>
             <ul>
-                 <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
-             </ul>
+                <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
+            </ul>
 
-        <p>
-        Companyrights Companyname 2023
-        </p>
+            <p>
+            Companyrights Companyname 2023
+            </p>
 
-        <ul>
-            <!--https://www.w3schools.com/html/html_links.asp -->
-            <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
-
-        </ul>
-
-        </nav>
-    </footer>
+            <ul>
+                <!--https://www.w3schools.com/html/html_links.asp -->
+                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </footer>
 
     </div>
 </body>
