@@ -28,14 +28,15 @@
         </nav>
         <header>
             <!-- Video til header https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video -->
-            <video class="hiddenmobile" autoplay muted loop id="myvideo">
+           <div class="videocrop"> <video class="hiddenmobile" autoplay muted loop id="myvideo">
             <source src="img/mountains.mp4" type="video/mp4">
-               </video>
+               </video> </div>
+
 
         
             <div class="hiddendesktop">
-                <!-- Bildet er tatt av Jill Wellington fra Pixabay -->
-                <img src="img/sunset.jpg" alt="Bilde av to personer som hopper i solnedgangen">
+                <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/jplenio-7645255/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3622519">Joe</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3622519">Pixabay</a> -->
+                <img src="img/sunset.jpg" alt="Bilde av trær">
             </div>
 
                 <!-- Tilbake til opp knapp https://stackoverflow.com/questions/19188211/how-to-add-fixed-button-to-the-bottom-right-of-page?fbclid=IwAR1xq9PaPY5SjSVxJz14JOX64lxeqJASfQ88onHf-nCiCNDJLFwCXWiSuUc -->
@@ -44,29 +45,29 @@
                 <div class="squaredfixedbutten"><i class="fa-solid fa-arrow-up"></i></div>
             </a>
 
-            <section>
+            <section class="headertext">
                 <h2>Compeling headline</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
                     Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
                 </p>
-                <a href="#Ourservices">read more about our services </a>
+                <a href="#ourservices" class="readmore"> Read more about our services </a>
             </section>
       
         </header>
         <main>
             <section class="flex-container">
-                <section>
+                <section class="enganging">
                     <h2>Enganging subheading. What can you help your visitors with</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
-                        Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
+                        Lacus nulla augue lectus quis. Consequat dis ipsum sed non.
                     </p>
                 </section>
 
                 <section id="company">
                     <article>
-                    <h2>About Our Company</h2>
+                    <h5>About Our Company</h5>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed. 
                         Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.

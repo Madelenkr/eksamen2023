@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-/* brukt kode fra kollonne 8 - 24 https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
+/* brukt kode fra kollonne 8 - 18 https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
 
 
 /* Setter grunnfontstørrelsen til å være responsiv basert på visningsvinduets bredde */
@@ -10,6 +10,9 @@ html {
     font-size: calc(1em + 1vw);
 }
 
+h2{
+    font-size: larger;
+}
 /* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -17,10 +20,24 @@ body {
     justify-content: center;
 }
 
+p{
+    font-size: large;
+}
+
 /* Styling for overskrift og navigasjonsmeny i header */
 header {
     grid-area: header;
     }
+
+.readmore{
+    background-color: #e6bd43;
+    color: #000;
+    text-decoration:none;
+    font-size: large;
+    padding: 10px 7px;
+    max-width: 100%;
+    font-weight: bold;
+}
 
     /* Brukt denne kilden til navbar https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active */
     ul {
@@ -28,11 +45,10 @@ header {
         margin: 0;
         padding: 0;
         overflow: hidden;
+
+        display: flex;
       }
       
-      li {
-        float: right;
-      }
       
       li a {
         font-size: medium;
@@ -42,7 +58,8 @@ header {
         padding: 10px 7px;
         text-decoration: none;
         font-weight: bold;
-        margin-top: 20px;
+        margin-top: 10px;
+        max-width: 100px;
       }
       
       li a.active:hover {
@@ -60,17 +77,15 @@ nav {
     grid-area: nav;
 }
 
+#enganging{
+    font-size: large;
+}
+
 footer {
     grid-area: footer;
 }
 
-#logo1{
-    position: absolute;
-    left: 0;
-    font-size: 20px;
-    width: 5%;
-    float: left;
-}
+
 
 #grid-container{
     display:grid;
@@ -93,20 +108,23 @@ footer {
 
 main{
     grid-area: main;
-    max-width: 960px;
+    /* max-width: 960px; */
     width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     gap: 10px;
 }
 
-#myvideo{
-    max-width: 100%;
-    padding-top: 60px;
+#company{
+    width: 100%;
+    background-color: #e6bd43;
 }
+
 
 .ul meny{
     justify-content: right;
+
+    /* Pil kilde https://stackoverflow.com/questions/19188211/how-to-add-fixed-button-to-the-bottom-right-of-page?fbclid=IwAR1xq9PaPY5SjSVxJz14JOX64lxeqJASfQ88onHf-nCiCNDJLFwCXWiSuUc*/
 
 }
 .fixedButton{
@@ -128,14 +146,62 @@ main{
   cursor: pointer;
 }
 
+.artikkelkort{
+    min-height: 200px;
+    max-width: 692px;
+    flex-grow: inherit;
+}
+
+.footer ul{
+
+}
+
+
 /* Desktop */
 
 /* Hentet kode her https://help.optimizepress.com/article/1667-how-to-hide-an-element-on-desktop/ */
 @media only screen and (min-width: 600px) {
     .hiddendesktop{display:none;}
+    ul {
+
+        flex-direction: row-reverse;
+        float: right;
+      }
+      #logo1{
+        position: absolute;
+        left: 0;
+        font-size: 20px;
+        width: 5%;
+        float: left;
     }
 
+    /* Kilde til video https://stackoverflow.com/questions/18716077/crop-video-in-html */
+    /* Kilde til gjennomsiktig bakgrunn https://stackoverflow.com/questions/26480963/how-to-make-a-transparent-overlay-on-image */
 
+.videocrop{
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 360px;
+    display: block;
+    background: black;
+    opacity: 0.5;
+    margin-top: 4%;
+}
+
+#myvideo{
+    margin-left: 0px;
+    margin-top: -200px;
+    }
+
+    .headertext{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
@@ -148,5 +214,25 @@ main{
                         "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    place-items: center;
+}
+
+#logo1{
+    font-size: 20px;
+    width: 50%;
+}
+
+
+ul {
+
+    flex-direction: column-reverse;
+  }
+
+  .headertext{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 }
