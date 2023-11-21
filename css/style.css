@@ -39,13 +39,19 @@ header {
     font-weight: bold;
 }
 
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
+.readmore:hover {
+    background-color: #111;
+    color: #e6bd43;
+    
+  }
+
     /* Brukt denne kilden til navbar https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active */
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-
         display: flex;
       }
       
@@ -77,13 +83,25 @@ nav {
     grid-area: nav;
 }
 
-#enganging{
+.enganging{
+    text-align: center;
+    padding: 5%;
+}
+
+#signup{
+    background-color: #e9e7e7;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #000;
+    text-decoration color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     font-size: large;
 }
 
-footer {
-    grid-area: footer;
-}
 
 
 
@@ -115,10 +133,37 @@ main{
     gap: 10px;
 }
 
-#company{
-    width: 100%;
+.company{
     background-color: #e6bd43;
+   
+    
 }
+    
+    
+ .forsidebilde{
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+
+}
+
+/* kilde til border style https://www.w3schools.com/css/css_border.asp */
+.companyread{
+    text-decoration: none;
+    border-style: solid;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.companyread:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+
+
 
 
 .ul meny{
@@ -153,6 +198,8 @@ main{
 }
 
 .footer ul{
+
+    background-color: #000;
 
 }
 
@@ -200,6 +247,19 @@ main{
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+
+    .company{
+        display: inline-flex;
+       
+        
+    }
+
+
+    #services{
+        display: inline-flex;
+        align-items: center;
+        
     }
 }
 
