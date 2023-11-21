@@ -43,7 +43,7 @@ header {
 .readmore:hover {
     background-color: #111;
     color: #e6bd43;
-    
+
   }
 
     /* Brukt denne kilden til navbar https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active */
@@ -54,8 +54,8 @@ header {
         overflow: hidden;
         display: flex;
       }
-      
-      
+
+
       li a {
         font-size: medium;
         display: block;
@@ -67,17 +67,46 @@ header {
         margin-top: 10px;
         max-width: 100px;
       }
-      
-      li a.active:hover {
-        background-color: #111;
-        color: #e6bd43;
-        
-      }
-      
+
       .active {
         background-color: #e6bd43;
       }
 
+      /* Kilde https://www.w3schools.com/css/css_align.asp */
+      /* https://nation.marketo.com/t5/knowledgebase/how-to-move-a-form-button-left-or-right-using-css/ta-p/248907 */
+      /* Kilde til butten og mail https://stackoverflow.com/questions/9201125/center-an-id-in-a-html-page-using-css */
+
+button {
+    font-size: medium;
+        display: block;
+        color: black;
+        background-color: #e6bd43;
+        text-align: center;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        max-width: 250px;
+        border: none;
+        margin-bottom: 50px;
+        margin-top: -38px;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: 54%;
+
+}
+
+#mail {
+    background-color: #fff;
+    padding: 11px 32px;
+    margin-top: 11px;
+    max-width: 320px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 46%;
+}
 
 nav {
     grid-area: nav;
@@ -90,6 +119,9 @@ nav {
 
 #signup{
     background-color: #e9e7e7;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 footer{
@@ -105,13 +137,13 @@ footer{
 #grid-container{
     display:grid;
     grid-template-areas:  "nav nav nav"
-                          "header header header" 
+                          "header header header"
                           "main main main"
                           "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
 }
- 
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -123,20 +155,18 @@ footer{
 
 main{
     grid-area: main;
-    /* max-width: 960px; */
-    width: 100%;
+    /* width: 100%;
     margin: 0 auto;
-    /* padding: 2rem; */
-    gap: 10px;
+    gap: 10px; */
 }
 
 .company{
     background-color: #e6bd43;
-   
-    
+
+
 }
-    
-    
+
+
  .forsidebilde{
     display: flex;
     justify-content: left;
@@ -155,11 +185,6 @@ main{
     font-weight: bold;
 }
 
-.companyread:hover{
-    background-color: #000;
-    color: #e6bd43;
-}
-
 
 
 
@@ -172,13 +197,13 @@ main{
 .fixedButton{
     position: fixed;
     bottom: 0px;
-    right: 0px; 
+    right: 0px;
     padding: 20px;
 }
 .squaredfixedbutten{
   height: 50px;
-  line-height: 50px;  
-  width: 35px;  
+  line-height: 50px;
+  width: 35px;
   font-size: 20px;
   border: 3px;
   border-radius: 5px;
@@ -248,29 +273,43 @@ main{
 
     .company{
         display: inline-flex;
-       
-        
+
+
     }
 
 
     #services{
         display: inline-flex;
         align-items: center;
-        
+
     }
 
 footer{
     justify-content: space-between;
     align-items: baseline;
     font-size: large;
+    flex-direction: row;
+}
+
+li a.active:hover {
+    background-color: #111;
+    color: #e6bd43;
+
+  }
+button:hover{
+    background-color: #000;
+    color: #e6bd43;
+}
+.companyread:hover{
+    background-color: #000;
+    color: #e6bd43;
 }
 }
 #icon{
     list-style-type: none;
     margin: 1rem;
-    padding: 0;
+    padding: 25px;
     float: right;
-    font-size: xx-large;
   }
 
 /* Mobil */
@@ -305,4 +344,23 @@ ul {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+li a {
+    font-weight: normal;
+  }
+
+.active{
+
+    font-weight: bold;
+}
+
+#home {
+text-decoration: underline;
+text-decoration-color: #e6bd43;
+font-weight: bold;
+
+}
+
+
+
 }
