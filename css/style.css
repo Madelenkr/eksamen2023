@@ -95,11 +95,8 @@ nav {
 footer{
     grid-area: footer;
     background-color: #000;
-    text-decoration color: #fff;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    font-size: large;
 }
 
 
@@ -261,7 +258,20 @@ main{
         align-items: center;
         
     }
+
+footer{
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: large;
 }
+}
+#icon{
+    list-style-type: none;
+    margin: 1rem;
+    padding: 0;
+    float: right;
+    font-size: xx-large;
+  }
 
 /* Mobil */
 @media only screen and (max-width: 600px) {
