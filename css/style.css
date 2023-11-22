@@ -372,6 +372,20 @@ button:hover{
     background-color: #000;
     color: #e6bd43;
 }
+
+.hiof{
+    position:relative;
+    margin-left: 35%;
+    margin-top: -310px;
+
+}
+
+
+#skjema{
+    margin-left: 20%;
+
+}
+
 }
 #icon{
     list-style-type: none;
