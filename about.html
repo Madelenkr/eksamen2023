@@ -13,9 +13,13 @@
     <title>Companyname</title>
 </head>
 <body>
+    <a class="fixedButton" href>
+        <div class="squaredfixedbutten"><i class="fa-solid fa-arrow-up"></i></div>
+    </a>
 
     <div id="grid-container">
-        <nav>
+       <header>
+          <nav>
             <ul class="navbar">
                 <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
                 <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
@@ -25,65 +29,84 @@
                 <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
             </ul>  
         </nav>
-        <header>
-            <!--Tok vek nav fra header-->
-            <h2>What is Lorem Ipsum?</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-        </header>
+    </header>
+       
+          
+        
 
         <main>
             <section class="flex-container">
+
                 <section id="about">
-                    <h4>Company namke</h4>
-                    <h2>About Our Company</h2>
+                    <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/chrisfiedler-935884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">ChrisFiedler</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">Pixabay</a> -->
+                    <img src="img/paperto.jpg" alt="bilde av gammlet papir" class="paper">
+                <section class="aboutto">
+                    <p>Company name</p>
+                    <h3>About Our Company</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
                         Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
                         Nibh aliquam sed iaculis sed neque euismod lobortis turpis. Quam ante vel quis tristique urna.
                         Tristique turpis sed sit bibendum accumsan. Sed vulputate ac aliquam ut pellentesque adipiscing. 
                     </p>
-                    <!-- Kilde hentet fra https://www.computerhope.com/issues/ch000049.htm -->
-                    <a href="#kontaktoss">Get in touch with us</a>
+
+                        <!-- Kilde hentet fra https://www.computerhope.com/issues/ch000049.htm -->
+                        <a href="#kontaktoss" class="aboutknap">Get in touch with us</a>
+                 </section>    
+                  
+                 
                 </section>
             </section>
+
+                            
+            <h2 id="ourservices">Our Services</h2>
+
             <section id="services">
 
-                <h2>Our Services</h2>
+        <article>
                 <i class="fa-solid fa-users"></i>
-                <h4>Branding</h4>
+                <h4>Branding</h4><br>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
+        </article>
+        <article>
+
                 <i class="fa-solid fa-cloud-arrow-up"></i>
                 <h4>Design</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
+        </article> 
+        <article>
                 <i class="fa-solid fa-code"></i>
                 <h4>Development</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
+        </article>  
+        <article>       
                 <i class="fa-solid fa-wifi"></i>
                 <h4>Support</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
-             </section>
+        </article> 
+            </section>
 
             <section class="clients">
                 <h2>Some of our clients</h2>
-                <img src="img/logo1.png" alt="Bilde av logo">
-                <img src="img/logo2.png" alt="Bilde av logo">
-                <img src="img/logo3.png" alt="Bilde av logo">
+                <img src="img/logo1.png" alt="Bilde av logo" id="clientslogo">
+                <img src="img/logo2.png" alt="Bilde av logo" id="clientslogo">
+                <img src="img/logo3.png" alt="Bilde av logo" id="clientslogo">
             </section>
 
 
             <article>
                 <h2 id="kontaktoss">Contact us</h2>
-                <p>
+                <h5>
                     Send us a message
-                </p>
+                </h5>
                 <section id="skjerma">
                     <form>
                         <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text -->
@@ -96,6 +119,7 @@
                         <input type="submit" value="Send message">
                     </form>
 
+            <article class="hiof">
                     <h4>Contact information</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Amet ac scelerisque dictum vitae nullam praesent ut aliquam.
@@ -112,13 +136,14 @@
                     <p>
                         <i class="fa-solid fa-envelope"></i> Postmottak@hiof.no
                     </p>
+            </article>
                 </section>
             </article>
             <article>
                     <!-- Bygg inn i et kart på googlemats, kopierte html inn -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.21040932923!2d11.34978667679901!3d59.128879927049965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1700158081877!5m2!1sno!2sno" 
-                    width="600"
-                    height="450"
+                    width="100%"
+                    height="300"
                     style="border:0;"
                     allowfullscreen=""
                     loading="lazy"
@@ -127,18 +152,25 @@
             </article>  
         </main>
         <footer>
-                <ul>
-                    <li> <a href="index.html"> <img src="img/logo1.png" alt="Bilde av logo"> </a> </li>
-                </ul>
+            <ul>
+                <li> <a href="index.html"> <img src="img/logo1.png" class="logo1footer" alt="Bilde av logo"> </a> </li>
+            </ul>
 
-                <p>Companyrights Companyname 2023</p>
+            <p>
+            Companyrights Companyname 2023
+            </p>
 
-                <ul>
-                    <!--https://www.w3schools.com/html/html_links.asp -->
-                    <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
+
+    <section id="icon">
+            <ul>
+                <!--https://www.w3schools.com/html/html_links.asp -->
+                <!-- størrelse https://fontawesome.com/docs/web/style/size -->
+                <!-- Farger bak ikonen hentet jeg inspirasjon fra min OBLIG3 mappe jeg leverte i høst 2023. -->
+                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook  fa-2x" style="color: #fff;"> </i></a></li>
+                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram  fa-2x" style="color: #fff;"></i></a></li>
+                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin  fa-2x" style="color: #fff;"></i></a></li>
+            </ul>
+    </section>
         </footer>
     </div>
 </body>

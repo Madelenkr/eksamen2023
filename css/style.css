@@ -13,6 +13,16 @@ html {
 h2{
     font-size: larger;
 }
+
+main h2{
+    text-align: center;
+    width: 100%;
+}
+
+
+.logo1footer{
+    width: 100%;
+}
 /* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -225,6 +235,64 @@ main{
 
 }
 
+/* About side */
+
+.clients{
+    text-align: center;
+    background-color: #e6bd43;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+   
+}
+
+#clientslogo{
+    padding-right: 15px;
+}
+/* Bruker som på contact boksen */
+.aboutknap{
+    background-color: #e6bd43;
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px 7px;
+    max-width: 100%;
+    font-weight: bold;
+}
+
+.paper{
+    width: 100%;
+    height: 600px;
+    padding-top: 60px;
+}
+/* Kilde https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks */
+
+#about{
+    position: relative;
+}
+.aboutto{
+
+text-align: left;
+display: block;
+opacity: 0.7;
+position: absolute;
+top: 20px;
+left: 20px;
+right: 50px;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 50px;
+background-color: #fff;
+margin-left: 60%;
+margin-top: 80px;
+  
+}
+
+
+
+
+
+
 
 /* Desktop */
 
@@ -312,6 +380,15 @@ button:hover{
     float: right;
   }
 
+
+  /* About siden */
+
+  .aboutknap:hover{
+    background-color: #000;
+    color: #e6bd43;
+  }
+
+
 /* Mobil */
 @media only screen and (max-width: 600px) {
     .hiddenmobile{display:none;}
@@ -331,6 +408,9 @@ button:hover{
     width: 50%;
 }
 
+ main article{
+    text-align: center;
+}
 
 ul {
 
