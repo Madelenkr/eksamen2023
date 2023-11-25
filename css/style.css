@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 
-/* brukt kode fra kollonne 8 - 18 https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
+/* brukt kode fra kollonne 8 - 11 fra ann chalott sin unervisning https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
 
 
 /* Setter grunnfontstørrelsen til å være responsiv basert på visningsvinduets bredde */
 html {
     font-size: calc(1em + 1vw);
 }
-
+#home {
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    font-weight: bold;
+    
+    }
 h2{
     font-size: larger;
 }
@@ -74,13 +79,13 @@ header {
         text-align: center;
         padding: 10px 7px;
         text-decoration: none;
-        font-weight: bold;
         margin-top: 10px;
         max-width: 100px;
       }
 
       .active {
         background-color: #e6bd43;
+        font-weight: bold;
       }
 
       /* Kilde https://www.w3schools.com/css/css_align.asp */
@@ -251,9 +256,6 @@ main{
     margin: 20px;
 }
 
-.bildekort{
-    max-width: 692px;
-}
 
 
 .boksen{
@@ -307,11 +309,7 @@ main{
     border-bottom: 3px solid #e6bd43;
 }
 
-.footer ul{
 
-    background-color: #000;
-
-}
 
 /* About side */
 
@@ -349,11 +347,13 @@ main{
     position: relative;
 }
 .aboutto{
-
+align-items: right;
 text-align: left;
 display: block;
 opacity: 0.7;
 position: absolute;
+max-width: 400px;
+min-width: 280px;
 top: 20px;
 left: 20px;
 right: 50px;
@@ -361,8 +361,9 @@ padding-left: 15px;
 padding-right: 15px;
 padding-bottom: 50px;
 background-color: #fff;
-margin-left: 60%;
-margin-top: 80px;
+margin-top: 50px;
+justify-content: flex-end;
+
   
 }
 
@@ -464,6 +465,44 @@ button:hover{
     font-size: large;
 }
 
+
+/* Produktsiden */
+
+/* Fikk hjelp av chatgpt til å få bildene større */
+
+.bildekort{
+    max-width: 692px;
+}
+.bildekort4{
+    max-width: 692px;
+    width: 130%;
+    height: auto;
+}
+.bildekort1{
+    max-width: 692px;
+    width: 130%;
+    height: auto;
+
+}
+
+.bildekort2{
+    max-width: 692px;
+    width: 130%;
+    height: auto;
+
+}
+
+  /* About siden */
+
+  .aboutknap:hover{
+    background-color: #000;
+    color: #e6bd43;
+  }
+
+
+
+
+
 }
 #icon{
     list-style-type: none;
@@ -473,12 +512,6 @@ button:hover{
   }
 
 
-  /* About siden */
-
-  .aboutknap:hover{
-    background-color: #000;
-    color: #e6bd43;
-  }
 
 
 /* Mobil */
@@ -529,13 +562,31 @@ li a {
     font-weight: bold;
 }
 
-#home {
-text-decoration: underline;
-text-decoration-color: #e6bd43;
-font-weight: bold;
-
+main iframe {
+    width: 100%;
+   
 }
 
+footer{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#icon{
+    justify-content: center;
+    list-style: none;
+}
 
+#footerikon{
+    display: inline;
+}
+
+#textfooter{
+
+}
+.logo1footer{
+}
 
 }
