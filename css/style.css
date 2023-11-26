@@ -9,6 +9,10 @@
 html {
     font-size: calc(1em + 1vw);
 }
+main iframe {
+    width: 100%;
+   
+}
 #home {
     text-decoration: underline;
     text-decoration-color: #e6bd43;
@@ -175,7 +179,7 @@ main{
 
 .company{
     background-color: #e6bd43;
-
+    padding: 30px;
 
 }
 
@@ -347,22 +351,18 @@ main{
     position: relative;
 }
 .aboutto{
-align-items: right;
-text-align: left;
-display: block;
+
 opacity: 0.7;
 position: absolute;
 max-width: 400px;
 min-width: 280px;
 top: 20px;
-left: 20px;
 right: 50px;
 padding-left: 15px;
 padding-right: 15px;
 padding-bottom: 50px;
 background-color: #fff;
 margin-top: 50px;
-justify-content: flex-end;
 
   
 }
@@ -378,6 +378,7 @@ justify-content: flex-end;
 /* Hentet kode her https://help.optimizepress.com/article/1667-how-to-hide-an-element-on-desktop/ */
 @media only screen and (min-width: 600px) {
     .hiddendesktop{display:none;}
+
     ul.navbar {
 
         flex-direction: row-reverse;
@@ -527,11 +528,25 @@ button:hover{
     grid-template-rows: auto;
     place-items: center;
 }
+.hiddendesktop{
+    opacity: 0.5;
+    padding: 5%;
+    width: 100%;
+    align-items: center;
+}
 
 #logo1{
     font-size: 20px;
     width: 50%;
 }
+.readmore{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+    
+
+}
+
 
  main article{
     text-align: center;
@@ -541,13 +556,15 @@ ul.navbar {
 
     flex-direction: column-reverse;
   }
+
+  
   ul{
     flex-direction: column;
   }
 
   .headertext{
     position: absolute;
-    top: 65%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -566,27 +583,15 @@ main iframe {
     width: 100%;
    
 }
-
-footer{
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-#icon{
-    justify-content: center;
-    list-style: none;
+#produkttext{
+    top: 83%;
+   
 }
 
-#footerikon{
-    display: inline;
+#icon {
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-#textfooter{
-
-}
-.logo1footer{
-}
 
 }
