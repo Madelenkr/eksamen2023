@@ -8,6 +8,7 @@
 /* Setter grunnfontstørrelsen til å være responsiv basert på visningsvinduets bredde */
 html {
     font-size: calc(1em + 1vw);
+    max-width: 1600px;
 }
 main iframe {
     width: 100%;
@@ -32,9 +33,14 @@ main h2{
 .logo1footer{
     width: 100%;
 }
+
+
+
+/* brukt kode fra kollonne 41 - 46 fra ann chalott sin unervisning https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/style.css */
+
 /* Bruker Arial, Helvetica, sans-serif som standardfont for hele nettsiden og nullstiller margen til 0. */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', serif;
     margin: 0;
     justify-content: center;
     max-width: 1600px;
@@ -255,9 +261,12 @@ main{
 
 
 .artikkelkort{
+    max-width: 350px;
+    min-width: 200px;
     box-sizing: border-box;
     float: left;
-    margin: 20px;
+    margin: 32px;
+    flex-grow: 1;
 }
 
 
@@ -354,13 +363,13 @@ main{
 
 opacity: 0.7;
 position: absolute;
-max-width: 400px;
+max-width: 550px;
 min-width: 280px;
 top: 20px;
+bottom: 20px;
 right: 50px;
 padding-left: 15px;
 padding-right: 15px;
-padding-bottom: 50px;
 background-color: #fff;
 margin-top: 50px;
 
@@ -510,6 +519,8 @@ button:hover{
     margin: 1rem;
     padding: 25px;
     float: right;
+    color: #fff;
+    font-size: 23px;
   }
 
 
@@ -588,9 +599,13 @@ main iframe {
    
 }
 
-#icon {
-    flex-wrap: nowrap;
-    flex-direction: column;
+#icon ul{
+
+}
+
+
+footer{
+    place-items: center;
 }
 
 
