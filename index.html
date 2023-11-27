@@ -28,7 +28,7 @@
                     <li> <a href="about.html"> About </a></li>
                     <li> <a href="products.html"> Portfolio </a></li>
                     <li> <a id="home" href="index.html"> Home </a></li>
-                    <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                    <li> <a aria-label="Hjem knapp" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
         </nav>
@@ -47,11 +47,11 @@
 
                 <!-- Tilbake til opp knapp https://stackoverflow.com/questions/19188211/how-to-add-fixed-button-to-the-bottom-right-of-page?fbclid=IwAR1xq9PaPY5SjSVxJz14JOX64lxeqJASfQ88onHf-nCiCNDJLFwCXWiSuUc -->
            
-            <a class="fixedButton" href>
+            <a aria-label="Pil til toppen av siden" class="fixedButton" href>
                 <div class="squaredfixedbutten"><i class="fa-solid fa-arrow-up"></i></div>
             </a>
 
-            <section class="headertext">
+            <section tabindex="0" class="headertext">
                 <h2>Compeling headline</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
@@ -63,7 +63,7 @@
         </header>
         <main>
             <section class="flex-container">
-                <section class="enganging">
+                <section tabindex="0" class="enganging">
                     <h2>Enganging subheading. What can you help your visitors with</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
@@ -71,7 +71,7 @@
                     </p>
                 </section>
 
-                <section class="company">
+                <section tabindex="0" class="company">
                     
                     <!-- Bilde er hentet her https://placehold.co/400 -->
                     <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400">
@@ -90,9 +90,9 @@
                 </section>
 
                 
-                <h2 id="ourservices">Our Services</h2>
+                <h2 id="ourservices" tabindex="0">Our Services</h2>
 
-                <section id="services">
+                <section tabindex="0" id="services">
 
             <article>
                     <i class="fa-solid fa-users"></i>
@@ -156,9 +156,9 @@
     <section id="icon">
             <ul>
                 <!--https://www.w3schools.com/html/html_links.asp -->
-                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"> </i></a></li>
-                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a aria-label="Facebook" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"> </i></a></li>
+                <li><a aria-label="Instagram" href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a aria-label="Linkedin" href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
     </section>
         </footer>

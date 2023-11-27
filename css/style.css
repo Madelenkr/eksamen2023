@@ -66,6 +66,7 @@ main h2{
 }
 #sendbutton{
     background-color: #e6bd43;
+    margin: 7px;
     padding: 10px;
     font-weight: bold;
     border: none;
@@ -316,7 +317,6 @@ main{
     box-sizing: border-box;
     float: left;
     margin: 32px;
-    flex-grow: 1;
 }
 
 
@@ -491,6 +491,11 @@ margin-top: 50px;
 
     }
 
+    #sendbutton:hover{
+        background-color: #252525;
+        color: ;
+    }
+
 footer{
     justify-content: space-between;
     align-items: baseline;
@@ -515,7 +520,7 @@ button:hover{
 .hiof{
     position:relative;
     margin-left: 50%;
-    margin-top: -420px;
+    margin-top: -470px;
 
 }
 
@@ -533,6 +538,14 @@ button:hover{
 
 .bildekort{
     max-width: 692px;
+    width: 100%;
+    display: flex;
+    flex-grow: 2;
+    flex-basis: 0;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    
 }
 .bildekort4{
     max-width: 692px;
@@ -552,7 +565,21 @@ button:hover{
     height: auto;
 
 }
-
+.bokstre:hover{
+    background-color: #252525;
+    color: #e6bd43;
+    border: none;
+}
+.boksto:hover{
+    background-color: #252525;
+    color: #e6bd43;
+    border: none;
+}
+.boksen:hover{
+    background-color: #252525;
+    color: #e6bd43;
+    border: none;
+}
   /* About siden */
 
   .aboutknap:hover{
@@ -573,6 +600,7 @@ footer ul{
     color: #fff;
     font-size: 23px;
   }
+
 
 
 
