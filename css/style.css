@@ -43,7 +43,7 @@ main h2{
 
 .skjemaside{
     background-color: #e9e7e7;
-    padding: 2px;
+    padding: 5%;
 }
 
 #fname{
@@ -514,9 +514,8 @@ button:hover{
 
 .hiof{
     position:relative;
-    margin-left: 35%;
-    margin-top: -220px;
-    padding: 2px;
+    margin-left: 50%;
+    margin-top: -420px;
 
 }
 
@@ -524,6 +523,7 @@ button:hover{
 #skjema{
     margin-left: 20%;
     font-size: large;
+    padding: 5%;
 }
 
 
