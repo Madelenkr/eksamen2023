@@ -20,6 +20,18 @@ main iframe {
     font-weight: bold;
     
     }
+
+ #portfolio{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    font-weight: bold;
+ }   
+
+ #about{
+    text-decoration: underline;
+    text-decoration-color: #e6bd43;
+    font-weight: bold;
+ }
 h2{
     font-size: larger;
 }
@@ -29,9 +41,56 @@ main h2{
     width: 100%;
 }
 
+.skjemaside{
+    background-color: #e9e7e7;
+    padding: 2px;
+}
+
+#fname{
+    width: 30%;
+    padding: 7px;
+    border: none;
+}
+
+#subject{
+    width: 30%;
+    padding: 7px;
+    border: none;
+}
+
+
+#sms{
+    padding: 50px;
+    width: 30%;
+    border: none;
+}
+#sendbutton{
+    background-color: #e6bd43;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
 
 .logo1footer{
     width: 100%;
+}
+
+/*Farge og størrelse på ikonen i footer*/
+.fa-linkedin:before{
+    color: #fff;
+    font-size: 30px;
+    padding: 7px;
+}
+.fa-instagram:before{
+    color: #fff;
+    font-size: 30px;
+    padding: 7px;
+}
+
+.fa-facebook:before{
+    color: #fff;
+    font-size: 30px;
+    padding: 7px;
 }
 
 
@@ -67,7 +126,7 @@ header {
 
 /* https://www.w3schools.com/css/tryit.asp?filename=trycss_tooltip */
 .readmore:hover {
-    background-color: #111;
+    background-color:#252525;
     color: #e6bd43;
 
   }
@@ -189,23 +248,15 @@ main{
 
 }
 
-
- .forsidebilde{
-    display: flex;
-    justify-content: left;
-    padding: 1rem;
-
-}
-
 /* kilde til border style https://www.w3schools.com/css/css_border.asp */
 .companyread{
     text-decoration: none;
     border-style: solid;
     color: #000;
     padding: 10px;
-    text-align: center;
     font-size: large;
     font-weight: bold;
+    
 }
 
 
@@ -261,8 +312,7 @@ main{
 
 
 .artikkelkort{
-    max-width: 350px;
-    min-width: 200px;
+    max-width: 692px;
     box-sizing: border-box;
     float: left;
     margin: 32px;
@@ -356,7 +406,7 @@ main{
 }
 /* Kilde https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text_blocks */
 
-#about{
+#abouten{
     position: relative;
 }
 .aboutto{
@@ -449,16 +499,16 @@ footer{
 }
 
 li a.active:hover {
-    background-color: #111;
+    background-color: #252525;
     color: #e6bd43;
 
   }
 button:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
 }
 .companyread:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
 }
 
@@ -466,6 +516,7 @@ button:hover{
     position:relative;
     margin-left: 35%;
     margin-top: -220px;
+    padding: 2px;
 
 }
 
@@ -505,7 +556,7 @@ button:hover{
   /* About siden */
 
   .aboutknap:hover{
-    background-color: #000;
+    background-color: #252525;
     color: #e6bd43;
   }
 
@@ -514,7 +565,7 @@ button:hover{
 
 
 }
-#icon{
+footer ul{
     list-style-type: none;
     margin: 1rem;
     padding: 25px;
@@ -522,7 +573,6 @@ button:hover{
     color: #fff;
     font-size: 23px;
   }
-
 
 
 
@@ -543,7 +593,9 @@ button:hover{
     opacity: 0.5;
     padding: 5%;
     width: 100%;
+    height: auto;
     align-items: center;
+    overflow: hidden;
 }
 
 #logo1{
@@ -551,11 +603,23 @@ button:hover{
     width: 50%;
 }
 .readmore{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
     
 
+}
+
+.headertext h2 {
+ font-size: 30px;
+}
+
+.headertext p {
+    font-size: 16px;
+}
+
+.headertext a {
+    font-size: 15px;
 }
 
 
@@ -599,14 +663,26 @@ main iframe {
    
 }
 
-#icon ul{
-
-}
-
 
 footer{
     place-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+footer ul {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+.img-laptop {
+    width: 176%;
+    height: auto;
+}
+
 
 
 }

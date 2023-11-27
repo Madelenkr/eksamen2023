@@ -25,9 +25,9 @@
                 <ul class="navbar">
                     <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
                     <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
-                    <li> <a href="about.html"> About </a></li>
+                    <li> <a id="about" href="about.html"> About </a></li>
                     <li> <a href="products.html"> Portfolio </a></li>
-                    <li> <a id="home" href="index.html"> Home </a></li>
+                    <li> <a href="index.html"> Home </a></li>
                     <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
@@ -43,9 +43,9 @@
 
         <main>
             <section class="flex-container">
+                <section id="abouten">
                 <header>
-
-                <section id="about">
+                    
                     <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/chrisfiedler-935884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">ChrisFiedler</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">Pixabay</a> -->
                     <img src="img/paperto.jpg" alt="bilde av gammlet papir" class="paper">
                 <section class="aboutto">
@@ -60,8 +60,11 @@
 
                         <!-- Kilde hentet fra https://www.computerhope.com/issues/ch000049.htm -->
                         <a href="#kontaktoss" class="aboutknap">Get in touch with us</a>
-                 </section>    
-                </header>      
+                
+                    </section>    
+                </header>     
+                   
+                     
                  
                 </section>
             </section>
@@ -110,13 +113,13 @@
             </section>
 
 
-            <article>
+        <section class="skjemaside">
                 <h2 id="kontaktoss">Contact us</h2>
 
-                <section id="skjema">
-                    <h5>
+                <article id="skjema">
+                    <h4>
                         Send us a message
-                    </h5>
+                    </h4>
                     <form>
                         <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_text -->
                         <label for="fname">Name</label><br>
@@ -125,9 +128,10 @@
                         <input type="text" id="subject" name="subject" value="Branding.."><br>
                         <label for="sms">Message</label><br>
                         <input type="text" id="sms" name="sms" value=""><br>
-                        <input type="submit" value="Send message">
+                        <input type="submit" value="Send message" id="sendbutton">
                     </form>
-
+                </article>
+        </section>
             <article class="hiof">
                     <h4>Contact information</h4>
                     <p>
@@ -146,8 +150,7 @@
                         <i class="fa-solid fa-envelope"></i> Postmottak@hiof.no
                     </p>
             </article>
-                </section>
-            </article>
+            
             <article>
                     <!-- Bygg inn i et kart på googlemats, kopierte html inn -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.21040932923!2d11.34978667679901!3d59.128879927049965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1700158081877!5m2!1sno!2sno" 
@@ -165,7 +168,7 @@
                 <li> <a href="index.html"> <img src="img/logo1.png" class="logo1footer" alt="Bilde av logo"> </a> </li>
             </ul>
 
-            <p id="textfooter">
+            <p>
             Companyrights Companyname 2023
             </p>
 
@@ -173,11 +176,9 @@
     <section id="icon">
             <ul>
                 <!--https://www.w3schools.com/html/html_links.asp -->
-                <!-- størrelse https://fontawesome.com/docs/web/style/size -->
-                <!-- Farger bak ikonen hentet jeg inspirasjon fra min OBLIG3 mappe jeg leverte i høst 2023. -->
-                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook  fa-2x" style="color: #fff;"> </i></a></li>
-                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram  fa-2x" style="color: #fff;"></i></a></li>
-                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin  fa-2x" style="color: #fff;"></i></a></li>
+                <li><a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"> </i></a></li>
+                <li><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
     </section>
         </footer>
