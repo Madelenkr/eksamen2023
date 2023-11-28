@@ -6,11 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-    <meta name="author" content="Madelen Kristiansen" />
-    <meta name="description" content="Companyname selger varer i god kvalitet, Companyname holder til i Halden." />
-    <meta name="og:title" content="Companyname"/>
+    <meta property="author" content="Madelen Kristiansen">
+    <meta property="description" content="Companyname selger varer i god kvalitet, Companyname holder til i Halden.">
+    <meta property="og:title" content="Companyname">
+    <meta property="og:image" content="https://itstud.hiof.no/~madelekr/eksamen2023/img/sunset.jpg">
     <!-- Inspirasjon fra oblig 4 analyse på nettsiden min -->
-    <meta name="keywords" content="produkt, salg, pris, god kvalitet"/>
+    <meta name="keywords" content="forside, signup, bli medlem, vår klienter, om oss">
     <!-- Linker opp til css og fontawsome ikoner -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/fontawsome/css/all.css">
@@ -29,7 +30,7 @@
 
        <nav>
             <section>
-                <ul class="navbar">
+                <ul role="menubar" class="navbar">
                     <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
                     <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
                     <li> <a href="about.html"> About </a></li>
@@ -52,7 +53,7 @@
 
                 <img src="img/paperto.jpg" alt="Bilde av gammel papir" class="paper">
 
-                <h2 id="jobs">Explore previous jobs</h2>
+                <h2 tabindex="0" id="jobs">Explore previous jobs</h2>
             </header>    
                 <ul>
                 <!-- TIL CSS https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div -->
@@ -69,22 +70,22 @@
                     <section>
                     <article class="artikkelkort">
                         <!-- Bilde er hentet her https://placehold.co/400 -->
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
                     </article>
 
                     <article class="artikkelkort">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
 
                     </article>
                     <article class="artikkelkort">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
                     </article>
 
                     <article class="artikkelkorttest">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort4">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort4">
                         <h4>Et harum quidem</h4>
                     </article>
                 </section>
@@ -93,17 +94,17 @@
                 <section>
                     <article class="artikkelkort">
                         <!-- Bilde er hentet her https://placehold.co/400 -->
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
                     </article>
 
                     <article class="artikkelkort">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
                     </article>
 
                     <article class="artikkelkort">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort">
                         <h4>Et harum quidem</h4>
                     </article>
 
@@ -114,24 +115,25 @@
                 <section>
                     <article class="artikkelkort">
                         <!-- Bilde er hentet her https://placehold.co/400 -->
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort1">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort1">
                         <h4>Et harum quidem</h4>
                     </article>
 
                     <article class="artikkelkort">
-                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort2">
+                        <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" tabindex="0" class="bildekort2">
                         <h4>Et harum quidem</h4>
                     </article>
                 
                 </section>
             </section>
         </main>
+       
         <footer>
             <ul>
-                <li> <a title="Hjem knap" href="index.html"> <img src="img/logo1.png" class="logo1footer" alt="Bilde av logo"> </a> </li>
+                <li> <a role="button" href="index.html"> <img src="img/logo1.png" class="logo1footer" alt="Bilde av logo"> </a> </li>
             </ul>
 
-            <p>
+            <p title="Firmanavn">
             Companyrights Companyname 2023
             </p>
 
