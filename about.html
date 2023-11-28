@@ -49,14 +49,15 @@
 
         <main>
             <section class="flex-container">
-                <section id="abouten">
+                <section itemscope itemtype="http://schema.org/Organization" id="abouten">
                 <header>
                     
                     <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/chrisfiedler-935884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">ChrisFiedler</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">Pixabay</a> -->
                     <img src="img/paperto.jpg" alt="bilde av gammlet papir" class="paper">
                 <section class="aboutto">
-                    <p tabindex="0">Company name</p>
-                    <h3 tabindex="0">About Our Company</h3>
+                    <p itemprop="legalName" tabindex="0">Company name</p>
+                    
+                    <h3 itemprop="headline" tabindex="0">About Our Company</h3>
                     <p title="Oppsummering av company">
                         Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
                         Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
@@ -118,10 +119,10 @@
                 <img src="img/logo3.png" aria-label="Pynt" alt="Bilde av logo" class="clientslogo">
             </section>
 
-
-        <section class="skjemaside">
+            <!-- Hjelp av chatgpt til å finne microdata -->
+        <section itemscope itemtype="http://schema.org/PostalAddress" class="skjemaside">
                 <h2 id="kontaktoss">Contact us</h2>
-
+ 
                 <article id="skjema">
                     <h4 tabindex="0">
                         Send us a message
@@ -146,20 +147,21 @@
                         Vitae pulvinar fermentum tortor euismod habitant enim dictumst venenatis.<br>
                     </p>
                     
-                    <p tabindex="0" aria-label="B R A Veien 4, 1757 Halden">
+                    <p itemprop="streetAddress" tabindex="0" aria-label="B R A Veien 4, 1757 Halden">
                         <i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden
                     </p>
-                    <p tabindex="0" aria-label="69 60 80 80">
+                    <p itemprop="telephone" tabindex="0" aria-label="69 60 80 80">
                         <i class="fa-solid fa-phone"></i> 69 60 80 00
                     </p>
                     <!-- Kilde til epost https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto -->
-                    <p>
+                    <p itemprop="email">
                         <i class="fa-solid fa-envelope"> </i><a href="mailto:Postmottak@hiof.no"> Postmottak@hiof.no </a>
                     </p>
             </article>
         </section>
             
-            <article>
+        <div itemscope itemtype="http://schema.org/Map">
+            <article itemprop="hasMap">
                     <!-- Bygg inn i et kart på googlemats, kopierte html inn -->
                     <iframe title="Kart over hiof" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.21040932923!2d11.34978667679901!3d59.128879927049965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0xdd127f6ec81a545d!2sB%20R%20A%20Veien%204%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1700158081877!5m2!1sno!2sno" 
                     width="1518"
@@ -169,7 +171,8 @@
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-            </article>  
+            </article> 
+        </div>     
         </main>
 
         <footer>
