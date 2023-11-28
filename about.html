@@ -29,7 +29,7 @@
     <div id="grid-container">  
        <nav>
             <section>
-                <ul class="navbar">
+                <ul role="menubar" class="navbar">
                     <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
                     <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
                     <li> <a id="about" href="about.html"> About </a></li>
@@ -55,9 +55,9 @@
                     <!-- Bildet er tatt av <a href="https://pixabay.com/no/users/chrisfiedler-935884/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">ChrisFiedler</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1074131">Pixabay</a> -->
                     <img src="img/paperto.jpg" alt="bilde av gammlet papir" class="paper">
                 <section class="aboutto">
-                    <p>Company name</p>
-                    <h3>About Our Company</h3>
-                    <p>
+                    <p tabindex="0">Company name</p>
+                    <h3 tabindex="0">About Our Company</h3>
+                    <p title="Oppsummering av company">
                         Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
                         Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
                         Nibh aliquam sed iaculis sed neque euismod lobortis turpis. Quam ante vel quis tristique urna.
@@ -76,13 +76,13 @@
             </section>
 
                             
-            <h2 id="ourservices">Our Services</h2>
+            <h2 tabindex="0" id="ourservices">Our Services</h2>
 
             <section id="services">
 
         <article>
                 <i class="fa-solid fa-users"></i>
-                <h4>Branding</h4><br>
+                <h4 tabindex="0" title="branding">Branding</h4><br>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
@@ -90,32 +90,32 @@
         <article>
 
                 <i class="fa-solid fa-cloud-arrow-up"></i>
-                <h4>Design</h4>
+                <h4 tabindex="0" title="design">Design</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
         </article> 
         <article>
                 <i class="fa-solid fa-code"></i>
-                <h4>Development</h4>
+                <h4 tabindex="0" title="development">Development</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
         </article>  
         <article>       
                 <i class="fa-solid fa-wifi"></i>
-                <h4>Support</h4>
+                <h4 tabindex="0" title="Support">Support</h4>
                 <p>
                     Lorem ipsum dolor sit amet consectetur. Amet eu mattis facilisis iaculis lectus elementum pellentesque.
                 </p>
         </article> 
             </section>
 
-            <section title="Bilde av samarbeidspartnere" class="clients">
+            <section tabindex="0" title="Bilde av samarbeidspartnere" class="clients">
                 <h2>Some of our clients</h2>
-                <img src="img/logo1.png" alt="Bilde av logo" class="clientslogo">
-                <img src="img/logo2.png" alt="Bilde av logo" class="clientslogo">
-                <img src="img/logo3.png" alt="Bilde av logo" class="clientslogo">
+                <img src="img/logo1.png" aria-label="Pynt" alt="Bilde av logo" class="clientslogo">
+                <img src="img/logo2.png" aria-label="Pynt" alt="Bilde av logo" class="clientslogo">
+                <img src="img/logo3.png" aria-label="Pynt" alt="Bilde av logo" class="clientslogo">
             </section>
 
 
@@ -123,7 +123,7 @@
                 <h2 id="kontaktoss">Contact us</h2>
 
                 <article id="skjema">
-                    <h4>
+                    <h4 tabindex="0">
                         Send us a message
                     </h4>
                     <form>
@@ -139,17 +139,17 @@
                 </article>
 
                 <article title="Kontakt informasjon til hiof" class="hiof">
-                    <h4>Contact information</h4>
+                    <h4 tabindex="0">Contact information</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. <br> Amet ac scelerisque dictum vitae nullam praesent ut aliquam.<br>
                         Nunc mauris massa phasellus fringilla eu consectetur et cras mauris.<br>
                         Vitae pulvinar fermentum tortor euismod habitant enim dictumst venenatis.<br>
                     </p>
                     
-                    <p>
+                    <p tabindex="0" aria-label="B R A Veien 4, 1757 Halden">
                         <i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden
                     </p>
-                    <p>
+                    <p tabindex="0" aria-label="69 60 80 80">
                         <i class="fa-solid fa-phone"></i> 69 60 80 00
                     </p>
                     <!-- Kilde til epost https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto -->
