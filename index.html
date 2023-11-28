@@ -27,15 +27,15 @@
 
 <body>
     <div id="grid-container">
-       <nav>
+       <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
             <section>
                 <ul role="menubar" class="navbar">
                     <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
-                    <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
-                    <li> <a href="about.html"> About </a></li>
-                    <li> <a href="products.html"> Portfolio </a></li>
-                    <li> <a id="home" href="index.html"> Home </a></li>
-                    <li> <a role="button" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                    <li itemprop="name"> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
+                    <li itemprop="name"> <a href="about.html"> About </a></li>
+                    <li itemprop="name"> <a href="products.html"> Portfolio </a></li>
+                    <li itemprop="name"> <a id="home" href="index.html"> Home </a></li>
+                    <li itemprop="name"> <a role="button" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
         </nav>
@@ -64,7 +64,7 @@
                     Lorem ipsum dolor sit amet consectetur.Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed.
                     Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
                 </p>
-                <a itemprop="Organization" href="#ourservices" class="readmore"> Read more about our services </a>
+                <a href="#ourservices" class="readmore"> Read more about our services </a>
             </section>
       
         </header>

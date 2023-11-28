@@ -28,15 +28,15 @@
 <body>
     <div id="grid-container">
 
-       <nav>
+       <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
             <section>
                 <ul role="menubar" class="navbar">
                     <!--Fikk hjelp av ChatGPT for å finne ut at jeg måtte skrive about.html før hashtaggen siden det er et annet dokument  -->
-                    <li> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
-                    <li> <a href="about.html"> About </a></li>
-                    <li> <a id="portfolio" href="products.html"> Portfolio </a></li>
-                    <li> <a href="index.html"> Home </a></li>
-                    <li> <a role="button" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                    <li itemprop="name"> <a class="active" href="about.html#kontaktoss"> Contact </a></li>
+                    <li itemprop="name"> <a href="about.html"> About </a></li>
+                    <li itemprop="name"> <a id="portfolio" href="products.html"> Portfolio </a></li>
+                    <li itemprop="name"> <a href="index.html"> Home </a></li>
+                    <li itemprop="name"> <a role="button" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
         </nav>
@@ -55,13 +55,13 @@
 
                 <h2 tabindex="0" title="Jobs" id="jobs">Explore previous jobs</h2>
             </header>    
-                <ul>
+                <ul itemscope itemtype="https://schema.org/Organization">
                 <!-- TIL CSS https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div -->
-                    <li><a href="#branding" class="boksen"> Branding</a></li>
+                    <li><a itemprop="name" href="#branding" class="boksen"> Branding</a></li>
 
-                    <li><a href="#design" class="boksto"> Design</a></li>
+                    <li><a itemprop="name" href="#design" class="boksto"> Design</a></li>
                     
-                    <li><a href="#development" class="bokstre"> Development</a></li>
+                    <li><a itemprop="name" href="#development" class="bokstre"> Development</a></li>
                 </ul>
                     <!-- Fikk hjelp av chatGPT hvordan oppsettet ser ut, med id og article -->
 
