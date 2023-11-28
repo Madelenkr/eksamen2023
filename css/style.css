@@ -542,12 +542,12 @@ button:hover{
 
 /* Produktsiden */
 
-/* https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+/* Kilde til å hovre https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+/* Kilde til sekundene https://success.appen.com/hc/en-us/articles/202703155-CSS-Guide-to-Enlarge-Images-on-Hover */
 
 .artikkelkort:hover{
-    max-width: 692;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    max-width: 692px;
+    -webkit-transition-duration:4s; 
     transform: scale(1.1); 
 
 } 
