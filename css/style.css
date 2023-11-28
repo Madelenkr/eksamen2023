@@ -315,12 +315,15 @@ main{
     border-bottom: 3px solid #e6bd43;
 }
 
-
+/* https://www.w3schools.com/css/css3_flexbox_items.asp?fbclid=IwAR0o9nu1QgyoXSetxAp4f5ifUKbId1Yl0Pfy_wblA2TA6QN8lEydYjbrrLw */
+/* https://www.w3schools.com/css/css3_flexbox_container.asp */
 .artikkelkort{
     max-width: 692px;
-    box-sizing: border-box;
     float: left;
     margin: 32px;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
 }
 
 
@@ -541,7 +544,7 @@ button:hover{
 
 /* Fikk hjelp av chatgpt til å få bildene større */
 
-.bildekort{
+/* .bildekort{
     max-width: 692px;
     width: 100%;
     display: flex;
@@ -569,7 +572,7 @@ button:hover{
     width: 100%;
     padding-left: 1%;
 
-}
+} */
 .bokstre:hover{
     background-color: #252525;
     color: #e6bd43;
@@ -691,11 +694,6 @@ main iframe {
     width: 100%;
    
 }
-#produkttext{
-    top: 83%;
-   
-}
-
 
 footer{
     place-items: center;
