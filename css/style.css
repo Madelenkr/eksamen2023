@@ -41,6 +41,10 @@ main h2{
     width: 100%;
 }
 
+.placeholder{
+    padding: 10px;
+}
+
 .skjemaside{
     background-color: #e9e7e7;
     padding: 5%;
@@ -479,8 +483,9 @@ margin-top: 50px;
     }
 
     .company{
-        display: inline-flex;
-
+        /* display: inline-flex; */
+        display: flex;
+        justify-content: space-between;
 
     }
 
@@ -549,20 +554,20 @@ button:hover{
 }
 .bildekort4{
     max-width: 692px;
-    width: 130%;
-    height: auto;
+    padding-left: 1%;
+    width: 100%;
 }
 .bildekort1{
     max-width: 692px;
-    width: 130%;
-    height: auto;
+    width: 100%;
+    padding-left: 1%;
 
 }
 
 .bildekort2{
     max-width: 692px;
-    width: 130%;
-    height: auto;
+    width: 100%;
+    padding-left: 1%;
 
 }
 .bokstre:hover{
@@ -711,6 +716,14 @@ footer ul li {
     height: auto;
 }
 
+
+.placeholder{
+    width: 100%;
+}
+
+.paper{
+    width: 100%;
+}
 
 
 }

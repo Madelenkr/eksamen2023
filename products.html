@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <meta name="author" content="Madelen Kristiansen" />
+    <meta name="description" content="Produktene vi selger..." />
     <!-- Linker opp til css og fontawsome ikoner -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/fontawsome/css/all.css">
@@ -29,7 +32,7 @@
                     <li> <a href="about.html"> About </a></li>
                     <li> <a id="portfolio" href="products.html"> Portfolio </a></li>
                     <li> <a href="index.html"> Home </a></li>
-                    <li> <a href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                    <li> <a role="Hjem knapp" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
         </nav>
@@ -81,7 +84,6 @@
                         <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="bildekort4">
                         <h4>Et harum quidem</h4>
                     </article>
-
                 </section>
 
                 <h2 id="design">Design</h2>
@@ -121,8 +123,25 @@
                 </section>
             </section>
         </main>
+        <footer>
+            <ul>
+                <li> <a title="Hjem knap" href="index.html"> <img src="img/logo1.png" class="logo1footer" alt="Bilde av logo"> </a> </li>
+            </ul>
 
-   
+            <p>
+            Companyrights Companyname 2023
+            </p>
+
+
+    <section id="icon">
+            <ul>
+                <!--https://www.w3schools.com/html/html_links.asp -->
+                <li><a aria-label="Facebook" href="https://www.facebook.com/"> <i class="fa-brands fa-facebook"> </i></a></li>
+                <li><a aria-label="Instagram" href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a></li>
+                <li><a aria-label="Linkedin" href="https://www.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+    </section>
+        </footer>
 
     </div>
 </body>
