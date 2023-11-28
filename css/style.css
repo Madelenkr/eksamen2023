@@ -542,37 +542,17 @@ button:hover{
 
 /* Produktsiden */
 
-/* Fikk hjelp av chatgpt til å få bildene større */
+/* https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 
-/* .bildekort{
-    max-width: 692px;
-    width: 100%;
-    display: flex;
-    flex-grow: 2;
-    flex-basis: 0;
-    height: auto;
-    box-sizing: border-box;
-    justify-content: flex-start;
-    
-}
-.bildekort4{
-    max-width: 692px;
-    padding-left: 1%;
-    width: 100%;
-}
-.bildekort1{
-    max-width: 692px;
-    width: 100%;
-    padding-left: 1%;
+.artikkelkort:hover{
+    max-width: 692;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1); 
+
+} 
 
 }
-
-.bildekort2{
-    max-width: 692px;
-    width: 100%;
-    padding-left: 1%;
-
-} */
 .bokstre:hover{
     background-color: #252525;
     color: #e6bd43;
