@@ -6,8 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
-    <meta name="author" content="Madelen Kristiansen" />
-    <meta name="description" content="Nettside som holder til i Halden, som selger...." />
+    <meta property="author" content="Madelen Kristiansen" />
+    <meta property="description" content="Companyname selger varer i god kvalitet, Companyname holder til i Halden." />
+    <meta property="og:title" content="Companyname"/>
+    <meta property="og:image" content="https://itstud.hiof.no/~madelekr/eksamen2023/img/sunset.jpg"/>
+    <!-- Inspirasjon fra oblig 4 analyse på nettsiden min -->
+    <meta name="keywords" content="forside, signup, bli medlem, vår klienter, om oss"/>
     <!-- Linker opp til css og fontawsome ikoner -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font/fontawsome/css/all.css">
@@ -31,7 +35,7 @@
                     <li> <a href="about.html"> About </a></li>
                     <li> <a href="products.html"> Portfolio </a></li>
                     <li> <a id="home" href="index.html"> Home </a></li>
-                    <li> <a role="Hjem knapp" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
+                    <li> <a role="button" href="index.html"> <img src="img/logo1.png" id="logo1" alt="Bilde av logo"> </a> </li>  
                 </ul>  
             </section>
         </nav>
@@ -65,6 +69,19 @@
       
         </header>
         <main>
+            <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org/",
+                  "@type": "WebSite",
+                  "name": "Companyname",
+                  "url": "https://itstud.hiof.no/~madelekr/eksamen2023/index.html",
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://itstud.hiof.no/~madelekr/eksamen2023/index.html{search_term_string}",
+                    "query-input": "required name=search_term_string"
+                  }
+                }
+                </script>
             <section class="flex-container">
                 <section tabindex="0" class="enganging">
                     <h2>Enganging subheading. What can you help your visitors with</h2>
@@ -80,17 +97,44 @@
                     <img src="img/400x400.svg" alt="Bilde av grått bilde med 400x400" class="placeholder">
 
                     <article>
-                    <h4>About Our Company</h4>
+                    <h4 tabindex="0">About Our Company</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo gravida turpis pretium ullamcorper lectus sed. 
                         Lacus nulla augue lectus quis. Consequat dis ipsum sed non. Bibendum tempus amet vel orci volutpat eu nec risus.
                     </p>
                     <a href="about.html" class="companyread">Read more about us</a>
-                  
 
                     </article>
 
                 </section>
+
+                <!-- https://technicalseo.com/tools/schema-markup-generator/ -->
+                <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Article",
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://itstud.hiof.no/~madelekr/eksamen2023/index.html"
+                      },
+                      "headline": "About Our Company",
+                      "description": "Lorem ipsum dolor sit amet consectetur. Elementum purus dolor commodo.",
+                      "image": "https://itstud.hiof.no/~madelekr/eksamen2023/img/sunset.jpg",  
+                      "author": {
+                        "@type": "Organization",
+                        "name": "Companyname"
+                      },  
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "25.11.2023",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": ""
+                        }
+                      },
+                      "datePublished": "2023-11-25"
+                    }
+                    </script>
 
                 
                 <h2 id="ourservices" tabindex="0">Our Services</h2>
@@ -133,7 +177,7 @@
                 <form id="sign">
 
                     <h2 tabindex="0">Sign up for out newsletter</h2>
-                    <input type="email" name="email" placeholder="Nora@epost.no" id="mail" required>
+                    <input type="email" aria-label="E-postadresse" name="email" placeholder="Nora@epost.no" id="mail" required>
                     <!-- kilde til button https://www.w3schools.com/TAgs/att_button_form.asp -->
 
                 </form>
